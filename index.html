@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOKI TUGAS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            transition: background 0.5s ease-in-out;
+        }
+        .hero {
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .profile-img {
+            width: 225px;
+            height: 300px;
+            border-radius: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn-primary {
+            background: #0056b3;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #003d82;
+        }
+        .hidden {
+            display: none;
+        }
+        #about h2, #about p, #contact h2, #contact p, #contact a {
+            color: white;
+            font-weight: bold;
+        }
+        #contact p a {
+            color: #0000b3;
+            font-weight: bold;
+        }
+        .joki-title {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function togglePortfolio() {
+            var sections = document.querySelectorAll('.portfolio-section');
+            sections.forEach(section => {
+                section.classList.toggle('hidden');
+            });
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">OPEN JOKI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="togglePortfolio()">KLIK LEBIH LANJUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="profil.jpeg" class="profile-img" alt="">
+        <h1>HALO ADA YANG BISA DI BANTU?!</h1>
+        <p>TIDAK PERLU TAU SIAPA SAYA</p>
+    </section>
+    
+    <!-- About Me -->
+    <section id="about" class="container my-5 text-center portfolio-section hidden">
+        <h2>TENTANG SAYA</h2>
+        <p>SAYA DAPAT MEMBANTU ANDA DALAM MENUNTASKAN TUGAS ANDA DENGAN HARGA YANG TERJANGKAU (tergantung tingkat kesulitan dan deadline)
+            Saya seorang Web Developer dengan fokus pada desain responsif dan interaktif.</p>
+    </section>
+    
+    <!-- Daftar Joki Tugas -->
+    <section id="joki" class="container my-5 portfolio-section hidden">
+        <h2 class="text-center joki-title">DAFTAR JOKI TUGAS</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Pembuatan Website Sederhana</li>
+            <li class="list-group-item">Pemrograman HTML, CSS, JavaScript, Python</li>
+            <li class="list-group-item">Desain UI/UX</li>
+            <li class="list-group-item">Analisis Data</li>
+            <li class="list-group-item">Dokumentasi & Laporan Portofolio Website</li>
+            <li class="list-group-item">Makalah (Bahasa Indonesia & Inggris)</li>
+            <li class="list-group-item">PPT Presentasi</li>
+            <li class="list-group-item">Laporan Praktikum (Tulis Tangan/Ketik)</li>
+            <li class="list-group-item">Karya Ilmiah & Lainnya</li>
+        </ul>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact" class="container my-5 text-center portfolio-section hidden">
+        <h2>HUBUNGI SAYA DI!!</h2>
+        <p><span>EMAIL: </span><a href="mailto:agam85767@gmail.com">agam85767@gmail.com</a></p>
+        <p><span>WHATSAP ME: </span><a href="https://wa.me/6287856643707" target="_blank">0823-4110-3319</a></p>
+    </section>
+    
+</body>
+</html>
